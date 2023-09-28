@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color:rgb(103, 28, 241);
+        }
+        .purple{
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>querySelectorAll Example</h1>
+    <h2>Red Fruits</h2>
+    <ul class="red">
+        <li>Apple</li>
+        <li>Raspberry</li>
+        <li>Cherry</li>
+    </ul>
+     <h2>Purple Fruits</h2>
+     <ul class="purple">
+        <li>Grapes</li>
+        <li>Blackcurrent</li>
+        <li>Plums</li>
+    </ul>
+    <script>
+        //selects All the <li> elements and add text to each one
+            let listItems=document.querySelectorAll("li");
+            for (let i=0; i<listItems.length;i++){
+                listItems[i].innerHTML +="is yummy"
+            }
+            //selects the PURPLE <li> elements and make then bold
+                let purpleItems = document.querySelectorAll(".purple li");
+                for (let i=0; i<purpleItems.length; i++){
+                    purpleItems[i].innerHTML +="!!!"
+                }
+                //console log the content of the items in each list 
+                //Remember that quertSelector returns only the FIRST match
+                let firstRed = document.querySelector(".red li");
+                console.log("contents of first red li:",firstRed.innerHTML);
+                let firstPurple = document.querySelector(".purple li");
+                console.log("contents of first purple li:",firstPurple.innerHTML);
+    </script>
+</body>
+</html>
