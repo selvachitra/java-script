@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <h1>Javascript string</h1>
+    <script>
+       /* var st="javascript";
+        document.write(st.toUpperCase(),"<br>");
+        document.write(st.toLowerCase(),"<br>");
+        document.write(st.charAt(4),"<br>");
+        document.write(st.lastIndexOf('s'),"<br>");*/
+        //defining a string
+        
+
+        let sentance="I love coding.";
+
+        //returns num of char in the sentance str
+        document.write(sentance.length,"<br>");
+        document.write(sentance.replace('love','like'),"<br>");
+        document.write(sentance.indexOf('l'),"<br>");
+        document.write(sentance.lastIndexOf('0'),"<br>");
+        document.write(sentance.startsWith('I'),"<br>");
+        document.write(sentance.endsWith('ing'),"<br>");
+        document.write(sentance.includes('I'),"<br>");
+        document.write(sentance.repeat(3),"<br>");
+        document.write(sentance.charCodeAt(4),"<br>"); 
+        let string1=String.fromCharCode(72,69,76,76,79);
+        //printing the equvivalent character
+        document.write(string1,"<br>");
+        document.write(sentance.substring(0,10),"<br>");
+        document.write(sentance.padStart(20,'*'),"<br>");
+        document.write(sentance.padEnd(20,'*'),"<br>");
+       /* const mes="Javascript is a fun programming language.";
+        const exp=/programming/
+        let result=mes.match(exp);
+        console.log(result,"<br>");*/
+       /* const mes="I am learning Javascript not Java";
+        const exp=/Java/
+        let result=mes.match(exp);
+        console.log(result,"<br>");
+        const res=/Java/g;
+        let result1=mes.match(res);
+        console.log(result1);*/
+        const message="Javascript :: is :: fun";
+        let result=message.split("::");
+        console.log(result);
+     </script>
+</body>
+</html>
