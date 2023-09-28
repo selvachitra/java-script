@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+</head>
+<body>
+    <h2>JS Confirm Box</h2>
+    <button onclick="myFunction()">ClickMe</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var txt;
+            if(confirm("press a button!!")){
+                txt="you pressed ok!";
+
+            }else{
+             document.getElementById("demo").innerHTML=txt;
+            }
+        }
+    </script>
+</body>
+</html>
